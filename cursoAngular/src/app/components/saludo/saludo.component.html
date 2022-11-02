@@ -1,0 +1,6 @@
+<h1>Hola, {{ nombre }}!</h1>
+<h3 [ngClass]="nombre == 'Anonimo' ? 'anonimo' : 'saludo'" id="usuario" [innerText]="nombre"></h3>
+<button id="emit-alerta" (click)="enviarMensajeAlPadre()">Enviar mensaje de saludo al componente padre</button>
+
+<!-- Hacer uso del componente BasicList del modulo Listas -->
+<app-basic-list></app-basic-list>
